@@ -20,9 +20,9 @@ const deleteTask = (req, res) => {
 }
 
 module.exports = {
-    getAllTask,
-    createTask,
-    getTask,
-    updateTask,
-    deleteTask
+  getAllTask,
+  createTask,
+  getTask,
+  updateTask,
+  deleteTask
 }
