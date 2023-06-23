@@ -1,4 +1,3 @@
-
 const getAllTask = (req, res) => {
     res.send('Get all task');
 }
