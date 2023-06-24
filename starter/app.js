@@ -11,7 +11,7 @@ app.get('/hello', (req, res) => {
    res.send('<h1>Task Manager App</h1>'); 
 })
 
-app.use('/api/v1/tasks', tasks)
+app.use('/api/v1/tasks', tasks);
 
 const port = 3000;
 
