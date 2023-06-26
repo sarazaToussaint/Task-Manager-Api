@@ -1,3 +1,9 @@
-const connectionString = 
-'mongodb+srv://Saraza:<password>@task-management.fpyvw0d.mongodb.net/?retryWrites=true&w=majority'
+const mongoose = require('mongoose');
+
  
+const connectDB = (url) => {
+
+  return mongoose.connect(url);
+}
+
+module.exports = connectDB;
