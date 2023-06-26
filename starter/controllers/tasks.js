@@ -35,7 +35,6 @@ const getTask = async (req, res) => {
 
 const updateTask = (req, res) => {
   res.send('Update a task');
-  
 }
 
 const deleteTask = async (req, res) => {
