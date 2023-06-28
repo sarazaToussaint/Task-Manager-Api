@@ -31,7 +31,6 @@ const deleteTask = asyncWrapper(async (req, res) => {
 
   if (!task) {
     return next(createCustomError(`No task with id ${taskID}`, 404))
-    // return res.status(404).json({ msg: `No task with id ${taskID}`});
   }
 
   res.status(200).json({ task });
@@ -47,8 +46,7 @@ const updateTask = asyncWrapper(async (req, res) => {
   });
 
     if (!task) {
-      return next(createCustomError(`No task with id ${taskID}`, 404))
-      // return res.status(404).json({ msg: `No task with id ${taskID}`});
+      return next(createCustomError(`No task with id ${taskID}`, 404));
     }
 
     res.status(200).json({ task });
